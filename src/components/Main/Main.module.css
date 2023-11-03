@@ -1,0 +1,20 @@
+.note__container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.note__content {
+  padding: 2px;
+  width: 85%;
+  background-color: white;
+  border-radius: 5px;
+}
+.checked {
+  color: green;
+  background-color: white;
+}
+.note__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__inputs__section {
+  display: flex;
+  gap: 1rem;
+}
+.header__add {
+  display: flex;
+  align-items: stretch;
+}
+.header__add__input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.header__add__button {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.header__filter {
+  border-radius: 5px;
+}
