@@ -9,9 +9,22 @@
   background-color: white;
   border-radius: 5px;
 }
+.note__checked{
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+}
+.note__description{
+  position: relative;
+}
 .checked {
   color: green;
+  /* color: gray; */
   background-color: white;
+  border-radius:1rem;
+  padding: .25rem;
 }
 .note__wrapper {
   display: flex;
