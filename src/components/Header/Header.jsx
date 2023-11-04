@@ -11,9 +11,10 @@ function Header() {
       description: inputRef.current.value,
       check: false,
     };
-    console.log(newNote);
-    dispatch({ type: "add-note", payload: newNote });
-    inputRef.current.value=""
+    if(inputRef.current.value.length > 4){
+      dispatch({ type: "add-note", payload: newNote });
+      inputRef.current.value=""
+    }
 
   };
   const handleFilter = (e) => {

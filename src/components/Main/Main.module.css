@@ -1,13 +1,16 @@
 .note__container {
+  width: 80vw;
+  max-width: 37rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 .note__content {
-  padding: 2px;
+  padding: 4px;
   width: 85%;
-  background-color: white;
+  background-color: #fc9b0c;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #817c5e;
 }
 .note__checked{
   position: absolute;
@@ -19,15 +22,31 @@
 .note__description{
   position: relative;
 }
-.checked {
-  color: green;
-  /* color: gray; */
-  background-color: white;
-  border-radius:1rem;
-  padding: .25rem;
+.checkedTrue {
+
+  background-color: #817c5e;
+  padding: .5rem;
+  border-radius: 1rem;
+  color: #fc9b0c;
+}
+.checkedFalse {
+
+  background-color: #817c5e;
+  padding: .5rem;
+  border-radius: 1rem;
+  color: white;
+
+ 
 }
 .note__wrapper {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.note__btn{
+  background-color: #817c5e;
+  padding: .5rem;
+  border-radius: 1rem;
+  color: white;
 }
