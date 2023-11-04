@@ -17,12 +17,18 @@ function Main() {
     <main className={styles.note__wrapper}>
       {state.map((item) => (
         <div key={item.id} className={styles.note__container}>
-          <span className={styles.note__content}>{item.description}</span>
+          <div className={styles.note__content}>
+            <span className={styles.note__description}>
+              {item.description}{" "}
+              {item.check && <div className={styles.note__checked}/>}
+            </span>
+          </div>
           <BsFillTrashFill onClick={() => handelDelete(item.id)} />
           <ImCheckboxChecked
             onClick={() => handleCheck(item.id)}
             className={styles.checked}
           />
+          {item.check && <div>-</div>}
         </div>
       ))}
     </main>
