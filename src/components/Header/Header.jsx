@@ -1,14 +1,10 @@
 import styles from "./Header.module.css";
 import { NoteContext } from "../../Context/NoteContext";
-import { useContext, useRef, useState } from "react";
+import { useContext, useRef } from "react";
 function Header() {
   const { dispatch } = useContext(NoteContext);
   const inputRef = useRef("");
-  // const handleInputChange = (e) => {
-  //   console.log(inputRef.current.value);
-  //   inputRef.current.value = e.target.value;
-  // };
-
+  
   const handlesubmit = () => {
     const newNote = {
       id: new Date().getTime(),
@@ -17,6 +13,8 @@ function Header() {
     };
     console.log(newNote);
     dispatch({ type: "add-note", payload: newNote });
+    inputRef.current.value=""
+
   };
   const handleFilter = (e) => {
     dispatch({ type: "filter-note", payload: e.target.value });
@@ -29,7 +27,6 @@ function Header() {
       <h1 className={styles.header__title}>tasks</h1>
       <div className={styles.header__inputs__section}>
         <div className={styles.header__add}>
-          {" "}
           <input
             // onChange={handleInputChange}
             ref={inputRef}
