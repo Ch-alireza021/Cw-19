@@ -1,12 +1,11 @@
 .app_container {
-  width: 100%;
-  height: 100vh;
+  /* width: 100%; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  border-radius: 20px;
   background-color:#e8eaed;
   color: #141c0d;
 }
