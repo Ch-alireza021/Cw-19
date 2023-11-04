@@ -7,11 +7,12 @@
 }
 .header__inputs__section {
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
   width: 100%;
 }
 .header__add {
-  flex-basis: 80% ;
+  flex-basis: 90% ;
   display: flex;
   align-items: stretch;
 }
@@ -22,8 +23,9 @@
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   width: 100%;
-  background-color: #fc9b0c;
+  background-color: #81bd75;
   box-shadow: 3px 3px 3px #817c5e;
+  color: white;
 }
 .header__add__button {
   border: none;
@@ -35,4 +37,6 @@
   flex-basis: 10%;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #817c5e;
+  background-color: #d9c73c;
+  color: white;
 }
